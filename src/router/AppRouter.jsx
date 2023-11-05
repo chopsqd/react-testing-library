@@ -2,8 +2,8 @@ import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import Main from "../pages/Main";
 import About from "../pages/About";
-import Users from "../users/Users";
-import User from "../users/User";
+import Users from "../components/users/Users";
+import User from "../components/users/User";
 import NotFound from "../pages/NotFound";
 import HelloWorld from "../pages/HelloWorld";
 
