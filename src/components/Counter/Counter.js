@@ -1,7 +1,7 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {getCounterValue} from "../../store/selectors/getCounterValue/getCounterValue";
-import {decrement, increment} from "../../store/reducers/counterReducer";
+import {decrement, increment} from "../../store/reducers/counterReducer/counterReducer";
 
 const Counter = () => {
     const dispatch = useDispatch()
@@ -17,9 +17,9 @@ const Counter = () => {
 
     return (
         <div>
-            <h1>value: {value}</h1>
-            <button onClick={onIncrement}>+</button>
-            <button onClick={onDecrement}>-</button>
+            <h1 data-testid="value-title">{value}</h1>
+            <button data-testid="increment-btn" onClick={onIncrement}>+</button>
+            <button data-testid="decrement-btn" onClick={onDecrement}>-</button>
         </div>
     );
 };

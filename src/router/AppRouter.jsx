@@ -5,11 +5,13 @@ import About from "../pages/About";
 import Users from "../users/Users";
 import User from "../users/User";
 import NotFound from "../pages/NotFound";
+import HelloWorld from "../pages/HelloWorld";
 
 const AppRouter = () => {
     return (
         <Routes>
             <Route path={"/"} element={<Main/>}/>
+            <Route path={"/hello"} element={<HelloWorld/>}/>
             <Route path={"/about"} element={<About/>}/>
             <Route path={"/users"} element={<Users/>}/>
             <Route path={"/users/:id"} element={<User/>}/>
